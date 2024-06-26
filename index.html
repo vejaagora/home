@@ -334,7 +334,7 @@ prestashop.emit('updateCart', {reason: {}})
     ga('require', 'ec');
 </script>
 
-<style></style><script type="text/javascript">var ssa_autocomplete_template ="<# var prop = item['prop'] || {}; #><# if (item.bid==='word') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #>><#= item.label #><\/a><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid==='cms') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #>><#= item.label #><\/a><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='namemf') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_nmf)  { #><# if (prop.link_nmf)  { #><a href=\"<#= prop.link_nmf #>\"> (<#= prop.label_nmf #>)<\/a><# } else { #><span > (<#= prop.label_nmf #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='mfr') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #> <# if (item.prod_qty)  { #> (<#= item.prod_qty #>) <# } #><\/a><# if (prop.label_mfr)  { #><# if (prop.link_mfr)  { #><a href=\"<#= prop.link_mfr #>\"> (<#= prop.label_mfr #>)<\/a><# } else { #><span > (<#= prop.label_mfr #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='namecat') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><# if (prop.cat_full)  { #><# for (var i=0; i<prop.cat_full.length; i++) { #><# if (prop.cat_full[i].link_pcat)  { #><a class='ssa-item-highlight' href=\"<#= prop.cat_full[i].link_pcat #>\"> <#= prop.cat_full[i].label_pcat #><# if (prop.cat_full.length > (i+1)) { #> \/ <# } #><\/a><# } else { #><span class='ssa-item-highlight'> <#= prop.cat_full[i].label_pcat #><# if (prop.cat_full.length > (i+1)) { #> \/ <# } #><\/span><# } #><# } #><# } else { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_mcat)  { #><# if (prop.link_mcat)  { #><a href=\"<#= prop.link_mcat #>\"> (<#= prop.label_mcat #>)<\/a><# } else { #><span > (<#= prop.label_mcat #>)<\/span><# } #><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='cat') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_mcat)  { #><# if (prop.link_mcat)  { #><a href=\"<#= prop.link_mcat #>\"> (<#= prop.label_mcat #>)<\/a><# } else { #><span > (<#= prop.label_mcat #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid==='prodsimp') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_cat)  { #><# if (prop.link_cat)  { #><a href=\"<#= prop.link_cat #>\"> (<#= prop.label_cat #>)<\/a><# } else { #><span> (<#= prop.label_cat #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid==='prod') { #><# if (item.type==='groupcat') { #><a class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><# if (prop.label_mcat) { #><span class='ssa-item-button' <# if (prop.link_mcat) { #>data-link=\"<#= prop.link_mcat #>\"<# } #>> (<#= prop.label_mcat #>)<\/span><# } #><\/a><# } #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><# if (item.link) { #><a class='ssa-autocomplete-product-link' href=\"<#= item.link #>\"><\/a><div class='ssa-autocomplete-product' href=\"<#= item.link #>\"><div class='ssa-table'><div class='ssa-table-row'><# if (prop.image_link) { #><div class='ssa-image ssa-table-cell'><div><img src=\"<#= prop.image_link #>\" \/><\/div><\/div><# } #><div class='ssa-content ssa-table-cell'><# if ('rating' in prop) { #><div class='ssa-rating clearfix'><# for (var i=0; i<5; i++) { #><# if (prop.rating <= i) { #><div class='star'><\/div><# } else { #><div class='star star_on'><\/div><# } #><# } #><\/div><# } #><# if (prop.title) { #><div class='ssa-name'><#= prop.title #><\/div><# } #><# if (prop.label_cat) { #><div class='ssa-product-categories'><a <# if (prop.link_cat) { #>href=\"<#= prop.link_cat #>\"<# } #> ><#= prop.label_cat #><\/a><# if (prop.label_mcat)  { #><# if (prop.link_mcat)  { #><a href=\"<#= prop.link_mcat #>\"> (<#= prop.label_mcat #>)<\/a><# } else { #><span > (<#= prop.label_mcat #>)<\/span><# } #><# } #><\/div><# } #><#  if (prop.reference) { #><div class='ssa-reference'><#= prop.reference #><\/div><# } #><#  if (prop.desc) { #><div class='ssa-description'><#= prop.desc #><\/div><# } #><#  if ( window.ssa_has_addcart && !prop.hide_add_cart ) { #><div class='ssa-add-cart ssa-item-button js-product-miniature' title=\"Adicionar ao carrinho\" data-id_product=\"<#= prop.id_product #>\" data-id-product=\"<#= prop.id_product #>\" data-minimal_quantity=\"<#= prop.cart_min_qty #>\"><a class=\"js-quick-view-iqit\" href=\"#\" data-link-action=\"quickview\" data-toggle=\"tooltip\" title=\"\" data-original-title=\"ADICIONAR AO CARRINHO\"><img src=\"\/modules\/agvertshoes\/views\/img\/icons\/bag.svg\"><\/a><\/div><# } #><#  if (prop.price) { #><#  var new_price = prop.price;var old_price = prop.old_price || new_price;var reduction = parseInt(prop.reduction, 10) || 0;var has_reduction=(reduction > 0 && new_price < old_price );var formatted_reduction = !has_reduction ? '' : reduction +'%';#><div class='ssa-price-block'><div class='ssa-new-price'><#= new_price #><\/div><#  if (has_reduction) { #><div class='ssa-old-price'><#= old_price #><\/div><div class='ssa-reduce-percent-price'><#= formatted_reduction #><\/div><# } #><\/div><# } #><div class='ssa-qty-block'><#  if ( 'qty' in prop ) { #><div class='ssa-qty'>Qty: <#= prop.qty #><\/div><# } #><#  if ( 'min_qty' in prop ) { #><div class='ssa-min-qty'>Min qty: <#= prop.min_qty #><\/div><# } #><\/div><\/div><\/div><\/div><\/div><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid === 'notfound') { #><# if (item.type==='item') { #><# if (item.link) { #><div class='ssa-notfound'><a href=\"<#= item.link #>\"><span><#= item.label #><\/span><\/a><\/div><# } else { #><a><span><#= item.label #><\/span><\/a><# } #><# } #><# } #>";</script>
+<style></style><script type="text/javascript">var ssa_autocomplete_template ="<# var prop = item['prop'] || {}; #><# if (item.bid==='word') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #>><#= item.label #><\/a><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid==='cms') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #>><#= item.label #><\/a><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='namemf') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_nmf)  { #><# if (prop.link_nmf)  { #><a target='_blank'  href=\"<#= prop.link_nmf #>\"> (<#= prop.label_nmf #>)<\/a><# } else { #><span > (<#= prop.label_nmf #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='mfr') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #> <# if (item.prod_qty)  { #> (<#= item.prod_qty #>) <# } #><\/a><# if (prop.label_mfr)  { #><# if (prop.link_mfr)  { #><a target='_blank'  href=\"<#= prop.link_mfr #>\"> (<#= prop.label_mfr #>)<\/a><# } else { #><span > (<#= prop.label_mfr #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='namecat') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><# if (prop.cat_full)  { #><# for (var i=0; i<prop.cat_full.length; i++) { #><# if (prop.cat_full[i].link_pcat)  { #><a target='_blank'  class='ssa-item-highlight' href=\"<#= prop.cat_full[i].link_pcat #>\"> <#= prop.cat_full[i].label_pcat #><# if (prop.cat_full.length > (i+1)) { #> \/ <# } #><\/a><# } else { #><span class='ssa-item-highlight'> <#= prop.cat_full[i].label_pcat #><# if (prop.cat_full.length > (i+1)) { #> \/ <# } #><\/span><# } #><# } #><# } else { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_mcat)  { #><# if (prop.link_mcat)  { #><a target='_blank'  href=\"<#= prop.link_mcat #>\"> (<#= prop.label_mcat #>)<\/a><# } else { #><span > (<#= prop.label_mcat #>)<\/span><# } #><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><#  if (item.bid==='cat') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_mcat)  { #><# if (prop.link_mcat)  { #><a target='_blank'  href=\"<#= prop.link_mcat #>\"> (<#= prop.label_mcat #>)<\/a><# } else { #><span > (<#= prop.label_mcat #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid==='prodsimp') { #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><\/a><# if (prop.label_cat)  { #><# if (prop.link_cat)  { #><a target='_blank'  href=\"<#= prop.link_cat #>\"> (<#= prop.label_cat #>)<\/a><# } else { #><span> (<#= prop.label_cat #>)<\/span><# } #><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid==='prod') { #><# if (item.type==='groupcat') { #><a target='_blank'  class='ssa-item-highlight' <# if (item.link) { #>href=\"<#= item.link #>\"<# } #> ><#= item.label #><# if (prop.label_mcat) { #><span class='ssa-item-button' <# if (prop.link_mcat) { #>data-link=\"<#= prop.link_mcat #>\"<# } #>> (<#= prop.label_mcat #>)<\/span><# } #><\/a><# } #><# if (item.type==='header') { #><#= item.label #><# if ('total' in prop) { #><span> (<#= prop.total #>)<\/span><# } #><# } #><# if (item.type==='item') { #><# if (item.link) { #><a target='_blank'  class='ssa-autocomplete-product-link' href=\"<#= item.link #>\"><\/a><div class='ssa-autocomplete-product' href=\"<#= item.link #>\"><div class='ssa-table'><div class='ssa-table-row'><# if (prop.image_link) { #><div class='ssa-image ssa-table-cell'><div><img src=\"<#= prop.image_link #>\" \/><\/div><\/div><# } #><div class='ssa-content ssa-table-cell'><# if ('rating' in prop) { #><div class='ssa-rating clearfix'><# for (var i=0; i<5; i++) { #><# if (prop.rating <= i) { #><div class='star'><\/div><# } else { #><div class='star star_on'><\/div><# } #><# } #><\/div><# } #><# if (prop.title) { #><div class='ssa-name'><#= prop.title #><\/div><# } #><# if (prop.label_cat) { #><div class='ssa-product-categories'><a target='_blank'  <# if (prop.link_cat) { #>href=\"<#= prop.link_cat #>\"<# } #> ><#= prop.label_cat #><\/a><# if (prop.label_mcat)  { #><# if (prop.link_mcat)  { #><a target='_blank'  href=\"<#= prop.link_mcat #>\"> (<#= prop.label_mcat #>)<\/a><# } else { #><span > (<#= prop.label_mcat #>)<\/span><# } #><# } #><\/div><# } #><#  if (prop.reference) { #><div class='ssa-reference'><#= prop.reference #><\/div><# } #><#  if (prop.desc) { #><div class='ssa-description'><#= prop.desc #><\/div><# } #><#  if ( window.ssa_has_addcart && !prop.hide_add_cart ) { #><div class='ssa-add-cart ssa-item-button js-product-miniature' title=\"Adicionar ao carrinho\" data-id_product=\"<#= prop.id_product #>\" data-id-product=\"<#= prop.id_product #>\" data-minimal_quantity=\"<#= prop.cart_min_qty #>\"><a target='_blank'  class=\"js-quick-view-iqit\" href=\"#\" data-link-action=\"quickview\" data-toggle=\"tooltip\" title=\"\" data-original-title=\"ADICIONAR AO CARRINHO\"><img src=\"\/modules\/agvertshoes\/views\/img\/icons\/bag.svg\"><\/a><\/div><# } #><#  if (prop.price) { #><#  var new_price = prop.price;var old_price = prop.old_price || new_price;var reduction = parseInt(prop.reduction, 10) || 0;var has_reduction=(reduction > 0 && new_price < old_price );var formatted_reduction = !has_reduction ? '' : reduction +'%';#><div class='ssa-price-block'><div class='ssa-new-price'><#= new_price #><\/div><#  if (has_reduction) { #><div class='ssa-old-price'><#= old_price #><\/div><div class='ssa-reduce-percent-price'><#= formatted_reduction #><\/div><# } #><\/div><# } #><div class='ssa-qty-block'><#  if ( 'qty' in prop ) { #><div class='ssa-qty'>Qty: <#= prop.qty #><\/div><# } #><#  if ( 'min_qty' in prop ) { #><div class='ssa-min-qty'>Min qty: <#= prop.min_qty #><\/div><# } #><\/div><\/div><\/div><\/div><\/div><# } #><# } #><# if (item.type==='total') { #><# if ('total' in prop) { #><div class='ssa-total-found'><# if (item.link) { #><a target='_blank'  href=\"<#= item.link #>\"><# } #><span><#= item.label #> <#= prop.total #><\/span><# if (item.link) { #><\/a><# } #><\/div><# } #><# } #><# } #><# if (item.bid === 'notfound') { #><# if (item.type==='item') { #><# if (item.link) { #><div class='ssa-notfound'><a target='_blank'  href=\"<#= item.link #>\"><span><#= item.label #><\/span><\/a><\/div><# } else { #><a target='_blank' ><span><#= item.label #><\/span><\/a><# } #><# } #><# } #>";</script>
 <!-- emarketing start -->
 
 
@@ -510,7 +510,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div id="col-header" class="col col-1 px-2">
                     <div id="desktop_logo">
                                                     <h1>
-                                <a href="https://www.veja-store.com.br/">
+                                <a target='_blank'  href="https://www.veja-store.com.br/">
                                     <img id="logo" class="logo img-fluid"
                                         src="https://www.veja-store.com.br/img/vert-shoes-logo-1713286384.jpg"                                         alt="VEJA STORE">
                                 </a>
@@ -586,7 +586,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/masculino/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/masculino/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Masculino <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -596,7 +596,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/feminino/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/feminino/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Feminino <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -606,7 +606,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/kids/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/kids/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								KIDS <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -616,7 +616,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/vegano/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/vegano/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Vegano <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -626,7 +626,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/running/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/running/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Running <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -636,7 +636,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/o-projeto.html" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/o-projeto.html" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Projeto</span>
@@ -659,12 +659,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 	
-	<li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Masculino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/masculino/" >Masculino</a>
-	<ul id="dropdown-Masculino"><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/veja-x-etudes/" >VEJA x Études</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/volley/" >Volley</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/campo/" >Campo</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-10/" >V-10</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-12/" >V-12</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-90/" >V-90</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/esplar/" >Esplar</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/urca/" >Urca</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/recife/" >Recife</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/venturi/" >Venturi</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/wata-ii/" >Wata II</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-15/" >V-15</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/dekkan/" >Dekkan</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/condor-3/" >Condor 3</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/impala/" >Impala</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/sdu/" >SDU</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/vegano/" >Vegano</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Feminino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/feminino/" >Feminino</a>
-	<ul id="dropdown-Feminino"><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/volley/" >Volley</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/campo/" >Campo</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-10/" >V-10</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-12/" >V-12</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-90/" >V-90</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/esplar/" >Esplar</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/urca/" >Urca</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/recife/" >Recife</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/venturi/" >Venturi</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/wata-ii/" >Wata II</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-15/" >V-15</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/dekkan/" >Dekkan</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/condor-3/" >Condor 3</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/impala/" >Impala</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/sdu/" >SDU</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/vegano/" >Vegano</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Kids" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/kids/" >Kids</a>
-	<ul id="dropdown-Kids"><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/v-10/" >V-10</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/v-12/" >V-12</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/esplar/" >Esplar</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/canary/" >Canary</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/ollie/" >Ollie</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/baby/" >Baby</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Vegano" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/vegano/" >Vegano</a>
-	<ul id="dropdown-Vegano"><li class="dropdown"><a  href="https://www.veja-store.com.br/vegano/adulto/" >Adulto</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/vegano/kids/" >Kids</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Running" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/running/" >Running</a>
-	<ul id="dropdown-Running"><li class="dropdown"><a  href="https://www.veja-store.com.br/running/road-running/" >Road running</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/running/hiking/" >Hiking</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/running/training/" >Training</a></li></ul></li><li class="dropdown"><a  href="https://www.veja-store.com.br/o-projeto.html" >Projeto</a></li>
+	<li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Masculino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/masculino/" >Masculino</a>
+	<ul id="dropdown-Masculino"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/veja-x-etudes/" >VEJA x Études</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/volley/" >Volley</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/campo/" >Campo</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-10/" >V-10</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-12/" >V-12</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-90/" >V-90</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/esplar/" >Esplar</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/urca/" >Urca</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/recife/" >Recife</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/venturi/" >Venturi</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/wata-ii/" >Wata II</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-15/" >V-15</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/dekkan/" >Dekkan</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/condor-3/" >Condor 3</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/impala/" >Impala</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/sdu/" >SDU</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/vegano/" >Vegano</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Feminino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/feminino/" >Feminino</a>
+	<ul id="dropdown-Feminino"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/volley/" >Volley</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/campo/" >Campo</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-10/" >V-10</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-12/" >V-12</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-90/" >V-90</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/esplar/" >Esplar</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/urca/" >Urca</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/recife/" >Recife</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/venturi/" >Venturi</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/wata-ii/" >Wata II</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-15/" >V-15</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/dekkan/" >Dekkan</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/condor-3/" >Condor 3</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/impala/" >Impala</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/sdu/" >SDU</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/vegano/" >Vegano</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Kids" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/kids/" >Kids</a>
+	<ul id="dropdown-Kids"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/v-10/" >V-10</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/v-12/" >V-12</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/esplar/" >Esplar</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/canary/" >Canary</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/ollie/" >Ollie</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/baby/" >Baby</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Vegano" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/vegano/" >Vegano</a>
+	<ul id="dropdown-Vegano"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/vegano/adulto/" >Adulto</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/vegano/kids/" >Kids</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Running" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/running/" >Running</a>
+	<ul id="dropdown-Running"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/running/road-running/" >Road running</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/running/hiking/" >Hiking</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/running/training/" >Training</a></li></ul></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/o-projeto.html" >Projeto</a></li>
 		</ul>
 		
 	</div>
@@ -692,7 +692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/masculino/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/masculino/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Masculino <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -702,7 +702,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/feminino/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/feminino/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Feminino <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -712,7 +712,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/kids/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/kids/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								KIDS <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -722,7 +722,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/vegano/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/vegano/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Vegano <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -732,7 +732,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/running/" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/running/" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Running <i class="fa fa-angle-down cbp-submenu-aindicator"></i></span>
@@ -742,7 +742,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             
 
-	<a href="https://www.veja-store.com.br/o-projeto.html" class="nav-link" >
+	<a target='_blank'  href="https://www.veja-store.com.br/o-projeto.html" class="nav-link" >
 
 								<span class="cbp-tab-title">
 								Projeto</span>
@@ -765,12 +765,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 	
-	<li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Masculino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/masculino/" >Masculino</a>
-	<ul id="dropdown-Masculino"><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/veja-x-etudes/" >VEJA x Études</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/volley/" >Volley</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/campo/" >Campo</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-10/" >V-10</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-12/" >V-12</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-90/" >V-90</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/esplar/" >Esplar</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/urca/" >Urca</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/recife/" >Recife</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/venturi/" >Venturi</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/wata-ii/" >Wata II</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/v-15/" >V-15</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/dekkan/" >Dekkan</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/condor-3/" >Condor 3</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/impala/" >Impala</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/sdu/" >SDU</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/vegano/" >Vegano</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/masculino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Feminino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/feminino/" >Feminino</a>
-	<ul id="dropdown-Feminino"><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/volley/" >Volley</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/campo/" >Campo</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-10/" >V-10</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-12/" >V-12</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-90/" >V-90</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/esplar/" >Esplar</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/urca/" >Urca</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/recife/" >Recife</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/venturi/" >Venturi</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/wata-ii/" >Wata II</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/v-15/" >V-15</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/dekkan/" >Dekkan</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/condor-3/" >Condor 3</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/impala/" >Impala</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/sdu/" >SDU</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/vegano/" >Vegano</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/feminino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Kids" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/kids/" >Kids</a>
-	<ul id="dropdown-Kids"><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/v-10/" >V-10</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/v-12/" >V-12</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/esplar/" >Esplar</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/canary/" >Canary</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/ollie/" >Ollie</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/kids/baby/" >Baby</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Vegano" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/vegano/" >Vegano</a>
-	<ul id="dropdown-Vegano"><li class="dropdown"><a  href="https://www.veja-store.com.br/vegano/adulto/" >Adulto</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/vegano/kids/" >Kids</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Running" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a  href="https://www.veja-store.com.br/running/" >Running</a>
-	<ul id="dropdown-Running"><li class="dropdown"><a  href="https://www.veja-store.com.br/running/road-running/" >Road running</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/running/hiking/" >Hiking</a></li><li class="dropdown"><a  href="https://www.veja-store.com.br/running/training/" >Training</a></li></ul></li><li class="dropdown"><a  href="https://www.veja-store.com.br/o-projeto.html" >Projeto</a></li>
+	<li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Masculino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/masculino/" >Masculino</a>
+	<ul id="dropdown-Masculino"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/veja-x-etudes/" >VEJA x Études</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/volley/" >Volley</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/campo/" >Campo</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-10/" >V-10</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-12/" >V-12</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-90/" >V-90</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/esplar/" >Esplar</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/urca/" >Urca</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/recife/" >Recife</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/venturi/" >Venturi</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/wata-ii/" >Wata II</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/v-15/" >V-15</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/dekkan/" >Dekkan</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/condor-3/" >Condor 3</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/impala/" >Impala</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/sdu/" >SDU</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/vegano/" >Vegano</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/masculino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Feminino" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/feminino/" >Feminino</a>
+	<ul id="dropdown-Feminino"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/volley/" >Volley</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/campo/" >Campo</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-10/" >V-10</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-12/" >V-12</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-90/" >V-90</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/esplar/" >Esplar</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/urca/" >Urca</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/recife/" >Recife</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/venturi/" >Venturi</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/wata-ii/" >Wata II</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/v-15/" >V-15</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/dekkan/" >Dekkan</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/fitz-roy/" >Fitz Roy</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/condor-3/" >Condor 3</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/impala/" >Impala</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/rio-branco/" >Rio Branco</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/sdu/" >SDU</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/vegano/" >Vegano</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/chromefree/" >ChromeFree</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/best-sellers/" >Best Sellers</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/feminino/collab/" >Collab</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Kids" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/kids/" >Kids</a>
+	<ul id="dropdown-Kids"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/v-10/" >V-10</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/v-12/" >V-12</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/esplar/" >Esplar</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/canary/" >Canary</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/ollie/" >Ollie</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/kids/baby/" >Baby</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Vegano" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/vegano/" >Vegano</a>
+	<ul id="dropdown-Vegano"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/vegano/adulto/" >Adulto</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/vegano/kids/" >Kids</a></li></ul></li><li class="dropdown"><span class="mm-expand" role="button" data-display="static" data-toggle="dropdown" data-target="dropdown-Running" aria-expanded="false"><i class="fa fa-angle-down expand-icon" aria-hidden="true"></i><i class="fa fa-angle-up close-icon" aria-hidden="true"></i></span><a target='_blank'   href="https://www.veja-store.com.br/running/" >Running</a>
+	<ul id="dropdown-Running"><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/running/road-running/" >Road running</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/running/hiking/" >Hiking</a></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/running/training/" >Training</a></li></ul></li><li class="dropdown"><a target='_blank'   href="https://www.veja-store.com.br/o-projeto.html" >Projeto</a></li>
 		</ul>
 		
 	</div>
@@ -800,7 +800,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="mobile-main-bar">
                 <div class="row no-gutters align-items-center row-mobile-header">
                     <div id="mobile-header-dropdown" class="col col-auto col-mobile-btn col-mobile-btn-menu col-mobile-menu-dropdown">
-                        <a id="mobile-header-close-btn" class="m-nav-btn" data-display="static">
+                        <a target='_blank'  id="mobile-header-close-btn" class="m-nav-btn" data-display="static">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                             <span>Menu</span></a>
                         <div id="mobile_menu_click_overlay"></div>
@@ -808,7 +808,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div id="_mobile_iqitmegamenu-mobile" class="dropdown-menu-custom dropdown-menu"></div>
                     </div>
                     <div id="mobile-btn-search" class="col col-auto col-mobile-btn col-mobile-btn-search">
-                        <a class="m-nav-btn" data-toggle="dropdown" data-display="static"><i class="fa fa-search"
+                        <a target='_blank'  class="m-nav-btn" data-toggle="dropdown" data-display="static"><i class="fa fa-search"
                                 aria-hidden="true"></i>
                             <span>Busca</span></a>
                         <div id="search-widget-mobile"
@@ -841,19 +841,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                     <div class="col col-mobile-logo text-center">
-                        <a href="https://www.veja-store.com.br/">
+                        <a target='_blank'  href="https://www.veja-store.com.br/">
                             <img id="logo-mobile" class="logo img-fluid" src="https://www.veja-store.com.br/img/vert-shoes-logo-1713286384.jpg"  alt="VEJA STORE">
                         </a>
                     </div>
                     <div class="col col-auto col-mobile-btn col-mobile-btn-account">
-                        <a href="https://www.veja-store.com.br/minha-conta" class="m-nav-btn">
+                        <a target='_blank'  href="https://www.veja-store.com.br/minha-conta" class="m-nav-btn">
                             <img src="https://www.veja-store.com.br/modules/agvertshoes/views/img/icons/perfil.svg" />
                         </a>
                     </div>
                     
                                         <div class="col col-auto col-mobile-btn col-mobile-btn-cart ps-shoppingcart side-cart">
                         <div id="mobile-cart-wrapper" class="dropdown">
-                            <a id="mobile-cart-toogle" class="m-nav-btn" data-toggle="dropdown" data-display="static">
+                            <a target='_blank'  id="mobile-cart-toogle" class="m-nav-btn" data-toggle="dropdown" data-display="static">
                                 <img src="https://www.veja-store.com.br/modules/agvertshoes/views/img/icons/bag.svg" />
                                 <p class="cart-products-count">0</p>
                             </a>
@@ -898,7 +898,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
 
                     
-<aside id="notifications">
+<a target='_blank' side id="notifications">
     
     
     
@@ -945,7 +945,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             		<div class="elementor-image-carousel-wrapper"  >
 			<div class="elementor-image-carousel swiper-container  swiper-cls-fix desktop-swiper-cls-fix-1 tablet-swiper-cls-fix-3 mobile-swiper-cls-fix-3" data-slider_options='{"slidesToShow":1,"slidesToShowTablet":3,"slidesToShowMobile":3,"autoplaySpeed":10000,"autoplay":false,"loop":false,"disableOnInteraction":true,"speed":500,"lazy":true,"arrows":false,"dots":true,"fade":false}'>
                 <div class="swiper-wrapper">
-				<div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.veja-store.com.br/feminino/"><img class="swiper-slide-image swiper-lazy" width="4075" height="1918" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4075 1918 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/banners veja/desktop/HP DESK_3.jpg" alt="banner principal &Eacute;tudes desktop " /></a></div></div>                </div>
+				<div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.veja-store.com.br/feminino/"><img class="swiper-slide-image swiper-lazy" width="4075" height="1918" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4075 1918 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/banners veja/desktop/HP DESK_3.jpg" alt="banner principal &Eacute;tudes desktop " /></a></div></div>                </div>
                                     <div class="swiper-pagination elementor-swiper-pagination swiper-dots-outside"></div>
                                 			</div>
 		</div>
@@ -968,7 +968,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             		<div class="elementor-image-carousel-wrapper"  >
 			<div class="elementor-image-carousel swiper-container  swiper-cls-fix desktop-swiper-cls-fix-1 tablet-swiper-cls-fix-3 mobile-swiper-cls-fix-3" data-slider_options='{"slidesToShow":1,"slidesToShowTablet":3,"slidesToShowMobile":3,"autoplaySpeed":10000,"autoplay":false,"loop":false,"disableOnInteraction":true,"speed":500,"lazy":true,"arrows":false,"dots":true,"fade":false}'>
                 <div class="swiper-wrapper">
-				<div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.veja-store.com.br/feminino/"><img class="swiper-slide-image swiper-lazy" width="1170" height="2019" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1170 2019 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/banners veja/mobile/HP MOB_3.jpg" alt="banner principal &Eacute;tudes mobile" /></a></div></div>                </div>
+				<div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.veja-store.com.br/feminino/"><img class="swiper-slide-image swiper-lazy" width="1170" height="2019" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1170 2019 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/banners veja/mobile/HP MOB_3.jpg" alt="banner principal &Eacute;tudes mobile" /></a></div></div>                </div>
                                     <div class="swiper-pagination elementor-swiper-pagination swiper-dots-outside"></div>
                                 			</div>
 		</div>
@@ -988,11 +988,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-gwjhhc7 elementor-widget-image" data-element_type="image">
                 <div class="elementor-widget-container">
-            <a href="https://www.veja-store.com.br/masculino/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/MAN.jpg" width="5770" height="4592" alt="banner sencundario masculino" /></a></div>        </div>
+            <a target='_blank'  href="https://www.veja-store.com.br/masculino/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/MAN.jpg" width="5770" height="4592" alt="banner sencundario masculino" /></a></div>        </div>
                 </div>
                 <div class="elementor-widget elementor-element elementor-element-ymgnxtc elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.veja-store.com.br/masculino/" target="_blank" rel="noopener noreferrer">MASCULINO</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.veja-store.com.br/masculino/" target="_blank" rel="noopener noreferrer">MASCULINO</a></h2>        </div>
                 </div>
         				</div>
 			</div>
@@ -1002,11 +1002,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-96zcqmq elementor-widget-image" data-element_type="image">
                 <div class="elementor-widget-container">
-            <a href="https://www.veja-store.com.br/feminino/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/WOMAN.jpg" width="5770" height="4592" alt="banner secundario feminino" /></a></div>        </div>
+            <a target='_blank'  href="https://www.veja-store.com.br/feminino/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/WOMAN.jpg" width="5770" height="4592" alt="banner secundario feminino" /></a></div>        </div>
                 </div>
                 <div class="elementor-widget elementor-element elementor-element-zfy07kt elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.veja-store.com.br/feminino/">FEMININO</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.veja-store.com.br/feminino/">FEMININO</a></h2>        </div>
                 </div>
         				</div>
 			</div>
@@ -1022,11 +1022,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-rx3af3y elementor-widget-image" data-element_type="image">
                 <div class="elementor-widget-container">
-            <a href="https://www.veja-store.com.br/kids/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/KIDS.jpg" width="5770" height="4592" alt="banner secundario kids" /></a></div>        </div>
+            <a target='_blank'  href="https://www.veja-store.com.br/kids/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/KIDS.jpg" width="5770" height="4592" alt="banner secundario kids" /></a></div>        </div>
                 </div>
                 <div class="elementor-widget elementor-element elementor-element-3wa65pa elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.veja-store.com.br/kids/">KIDS</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.veja-store.com.br/kids/">KIDS</a></h2>        </div>
                 </div>
         				</div>
 			</div>
@@ -1036,15 +1036,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-vcy9l7a elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.veja-store.com.br/running/">RUNNING</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.veja-store.com.br/running/">RUNNING</a></h2>        </div>
                 </div>
                 <div class="elementor-widget elementor-element elementor-element-9sp760e elementor-widget-image" data-element_type="image">
                 <div class="elementor-widget-container">
-            <a href="https://www.veja-store.com.br/running/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners/RUNNING.jpg" width="5770" height="4592" alt="banner secundario running" /></a></div>        </div>
+            <a target='_blank'  href="https://www.veja-store.com.br/running/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners/RUNNING.jpg" width="5770" height="4592" alt="banner secundario running" /></a></div>        </div>
                 </div>
                 <div class="elementor-widget elementor-element elementor-element-9olasi2 elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.veja-store.com.br/running/">RUNNING</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.veja-store.com.br/running/">RUNNING</a></h2>        </div>
                 </div>
         				</div>
 			</div>
@@ -1060,7 +1060,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-rzjbcv3 elementor-widget-image elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-phone" data-element_type="image">
                 <div class="elementor-widget-container">
-            <a href="https://www.veja-store.com.br/outlet/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners/Banners_/Desktop/OUTLET_VERT_1.jpg" width="1200" height="370" alt="Outlet VERT/VEJA 2022" /></a></div>        </div>
+            <a target='_blank'  href="https://www.veja-store.com.br/outlet/"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners/Banners_/Desktop/OUTLET_VERT_1.jpg" width="1200" height="370" alt="Outlet VERT/VEJA 2022" /></a></div>        </div>
                 </div>
         				</div>
 			</div>
@@ -1076,11 +1076,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-4wuhqza elementor-widget-image projeto-img" data-element_type="image">
                 <div class="elementor-widget-container">
-            <a href="https://www.veja-store.com.br/o-projeto.html"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banner-secundario-veja/secundario-projeto-veja.jpg" width="1827" height="727" alt="banner secundario projeto" /></a></div>        </div>
+            <a target='_blank'  href="https://www.veja-store.com.br/o-projeto.html"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banner-secundario-veja/secundario-projeto-veja.jpg" width="1827" height="727" alt="banner secundario projeto" /></a></div>        </div>
                 </div>
                 <div class="elementor-widget elementor-element elementor-element-ac1vimh elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.veja-store.com.br/o-projeto.html">PROJETO</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.veja-store.com.br/o-projeto.html">PROJETO</a></h2>        </div>
                 </div>
         				</div>
 			</div>
@@ -1096,11 +1096,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-12i6z0b elementor-widget-image" data-element_type="image">
                 <div class="elementor-widget-container">
-            <a href="https://www.veja-store.com.br/lookbook"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/LOOKBOOK.jpg" width="1403" height="548" alt="banner secundario Lookbook" /></a></div>        </div>
+            <a target='_blank'  href="https://www.veja-store.com.br/lookbook"><div class="elementor-image"><img src="https://www.veja-store.com.br/img/cms/banners veja/banners secund&aacute;rios/LOOKBOOK.jpg" width="1403" height="548" alt="banner secundario Lookbook" /></a></div>        </div>
                 </div>
                 <div class="elementor-widget elementor-element elementor-element-jd09edp elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.veja-store.com.br/lookbook">LOOKBOOK</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.veja-store.com.br/lookbook">LOOKBOOK</a></h2>        </div>
                 </div>
         				</div>
 			</div>
@@ -1279,7 +1279,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="elementor-widget-wrap">
 		        <div class="elementor-widget elementor-element elementor-element-roncu59 elementor-widget-heading" data-element_type="heading">
                 <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default none"><a href="https://www.instagram.com/veja.br">Siga a VEJA</a></h2>        </div>
+            <h2 class="elementor-heading-title elementor-size-default none"><a target='_blank'  href="https://www.instagram.com/veja.br">Siga a VEJA</a></h2>        </div>
                 </div>
         				</div>
 			</div>
@@ -1298,7 +1298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             		<div class="elementor-image-carousel-wrapper"  >
 			<div class="elementor-image-carousel swiper-container  swiper-cls-fix desktop-swiper-cls-fix-4 tablet-swiper-cls-fix-3 mobile-swiper-cls-fix-2" data-slider_options='{"slidesToShow":4,"slidesToShowTablet":3,"slidesToShowMobile":2,"autoplaySpeed":5000,"autoplay":false,"loop":false,"disableOnInteraction":true,"speed":0,"lazy":false,"arrows":false,"dots":false,"fade":false}'>
                 <div class="swiper-wrapper">
-				<div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_1.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_2.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_3.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_4.jpg" alt="Image alt" /></a></div></div>                </div>
+				<div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_1.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_2.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_3.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_4.jpg" alt="Image alt" /></a></div></div>                </div>
                                 			</div>
 		</div>
 	        </div>
@@ -1320,7 +1320,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             		<div class="elementor-image-carousel-wrapper"  >
 			<div class="elementor-image-carousel swiper-container  swiper-cls-fix desktop-swiper-cls-fix-2 tablet-swiper-cls-fix-3 mobile-swiper-cls-fix-2" data-slider_options='{"slidesToShow":2,"slidesToShowTablet":3,"slidesToShowMobile":2,"autoplaySpeed":5000,"autoplay":false,"loop":true,"disableOnInteraction":true,"speed":500,"lazy":true,"arrows":false,"dots":false,"fade":false}'>
                 <div class="swiper-wrapper">
-				<div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1082 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/INSTA_1.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1082 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/INSTA_2.jpg" alt="Image alt" /></a></div></div>                </div>
+				<div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1082 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/INSTA_1.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1080 1082 '%3E%3C/svg%3E" data-src="https://www.veja-store.com.br/img/cms/INSTA_2.jpg" alt="Image alt" /></a></div></div>                </div>
                                 			</div>
 		</div>
 	        </div>
@@ -1330,7 +1330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             		<div class="elementor-image-carousel-wrapper"  >
 			<div class="elementor-image-carousel swiper-container  swiper-cls-fix desktop-swiper-cls-fix-2 tablet-swiper-cls-fix-3 mobile-swiper-cls-fix-2" data-slider_options='{"slidesToShow":2,"slidesToShowTablet":3,"slidesToShowMobile":2,"autoplaySpeed":5000,"autoplay":false,"loop":true,"disableOnInteraction":true,"speed":500,"lazy":false,"arrows":false,"dots":false,"fade":false}'>
                 <div class="swiper-wrapper">
-				<div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_3.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_4.jpg" alt="Image alt" /></a></div></div>                </div>
+				<div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_3.jpg" alt="Image alt" /></a></div></div><div class="swiper-slide"><div class="swiper-slide-inner"><a target='_blank'  href="https://www.instagram.com/veja.br/" target="_blank" rel="noopener noreferrer"><img class="swiper-slide-image swiper-lazy" width="1080" height="1082" src="https://www.veja-store.com.br/img/cms/INSTA_4.jpg" alt="Image alt" /></a></div></div>                </div>
                                 			</div>
 		</div>
 	        </div>
@@ -1406,7 +1406,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
           <div class="col hidden-xs-down">
             <div id="desktop_logo">
-              <a href="https://www.veja-store.com.br/">
+              <a target='_blank'  href="https://www.veja-store.com.br/">
                   <img class="logo img-fluid"
                         src="https://www.veja-store.com.br/img/vert-shoes-logo-1713286384.jpg"                         alt="VEJA STORE">
               </a>
@@ -1423,42 +1423,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="block-content">
                 <ul>
                                                                         <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/minha-conta"
                                         title=""                                                                        >
                                     Minha Conta
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/processo-de-compra.html"
                                         title="Saiba como é fácil e seguro comprar na VEJA - VERT. Confira nosso processo de compra passo a passo e adquira seus modelos favoritos!"                                                                        >
                                     Processo de Compra
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/trocas-e-devolucoes.html"
                                         title="Saiba como solicitar a sua troca ou devolução na VEJA - VERT. Confira a nossa política de trocas e devoluções."                                                                        >
                                     Trocas e Devoluções
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/compra-segura.html"
                                         title="Compre com segurança na VEJA - VERT. Tênis com design parisiense e produção brasileira. Entregamos para todo o Brasil."                                                                        >
                                     Compra Segura
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/faq.html"
                                         title="Encontre respostas para as perguntas mais frequentes sobre a VEJA - VERT. Confira o nosso FAQ e esclareça suas dúvidas agora mesmo!"                                                                        >
                                     FAQ
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/faleconosco"
                                         title="Use o nosso formulário para nos contactar"                                                                        >
                                     Fale Conosco
@@ -1473,28 +1473,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="block-content">
                 <ul>
                                                                         <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/onde-encontro"
                                                                                                                 >
                                     Onde Encontro
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/termos-e-condicoes.html"
                                         title="Confira os termos e condições para utilização do site VEJA - VERT."                                                                        >
                                     Termos e Condições
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/sua-privacidade.html"
                                         title="Na VEJA - VERT, levamos sua privacidade a sério. Conheça nossa política de privacidade e saiba como protegemos seus dados pessoais ao navegar em nosso site."                                                                        >
                                     Sua Privacidade
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/informacao-legal.html"
                                         title="Confira as informações legais sobre a VEJA - VERT"                                                                        >
                                     Informação Legal
@@ -1509,35 +1509,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="block-content">
                 <ul>
                                                                         <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/o-projeto.html"
                                                                                                                 >
                                     Quem Somos
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/projeto-transparencia.html"
                                                                                                                 >
                                     Transparência
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/projeto-emissao-de-co2.html"
                                                                                                                 >
                                     Emissão de CO2
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/projeto-materiais-inovadores.html"
                                                                                                                 >
                                     Materiais Inovadores
                                 </a>
                             </li>
                                                                                                 <li>
-                                <a
+                                <a target='_blank' 
                                         href="https://www.veja-store.com.br/projeto-reintegracao.html"
                                                                                                                 >
                                     Inclusão Social
@@ -1552,12 +1552,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
 
 <ul class="social-links d-flex align-items-center _footer"     itemid="#store-organization">
-  <li class="instagram"><a   href="https://www.instagram.com/veja.br" target="_blank" rel="noreferrer noopener"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>  <li class="facebook"><a   href="https://www.facebook.com/vejafairtradebr" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>      <li class="pinterest"><a   href="https://br.pinterest.com/vejabr/" target="_blank" rel="noreferrer noopener"><i class="fa fa-pinterest-p fa-fw" aria-hidden="true"></i></a></li>  <li class="youtube"><a href="https://www.youtube.com/@vejastore/videos" target="_blank" rel="noreferrer noopener"><img src="https://www.veja-store.com.br/img/custom_icons/Youtube.png"></a></li>    <li class="linkedin"><a   href="https://www.linkedin.com/company/vejabr" target="_blank" rel="noreferrer noopener"><img src="https://www.veja-store.com.br/img/custom_icons/Linkedin.png"></a></li>  <li class="linkedin"><a   href="https://www.tiktok.com/@veja" target="_blank" rel="noreferrer noopener"><img src="https://www.veja-store.com.br/img/custom_icons/Tiktok.png"></a></li>
+  <li class="instagram"><a target='_blank'    href="https://www.instagram.com/veja.br" target="_blank" rel="noreferrer noopener"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a></li>  <li class="facebook"><a target='_blank'    href="https://www.facebook.com/vejafairtradebr" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a></li>      <li class="pinterest"><a target='_blank'    href="https://br.pinterest.com/vejabr/" target="_blank" rel="noreferrer noopener"><i class="fa fa-pinterest-p fa-fw" aria-hidden="true"></i></a></li>  <li class="youtube"><a target='_blank'  href="https://www.youtube.com/@vejastore/videos" target="_blank" rel="noreferrer noopener"><img src="https://www.veja-store.com.br/img/custom_icons/Youtube.png"></a></li>    <li class="linkedin"><a target='_blank'    href="https://www.linkedin.com/company/vejabr" target="_blank" rel="noreferrer noopener"><img src="https://www.veja-store.com.br/img/custom_icons/Linkedin.png"></a></li>  <li class="linkedin"><a target='_blank'    href="https://www.tiktok.com/@veja" target="_blank" rel="noreferrer noopener"><img src="https://www.veja-store.com.br/img/custom_icons/Tiktok.png"></a></li>
 </ul>
 
 
                 <div class="logo-bcorp">
-                    <a href="https://www.veja-store.com.br/projeto-transparencia.html"><img class="img-fluid" src="https://www.veja-store.com.br/img/LOGOBCORP.png" alt="Certified B Corporation"></a>
+                    <a target='_blank'  href="https://www.veja-store.com.br/projeto-transparencia.html"><img class="img-fluid" src="https://www.veja-store.com.br/img/LOGOBCORP.png" alt="Certified B Corporation"></a>
                 </div>
             </div>
                   </div>
